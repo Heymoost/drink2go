@@ -1,0 +1,45 @@
+.media {
+  margin: 0;
+  list-style-type: none;
+  border-bottom: 1px solid #f0ebff;
+}
+
+.media__title {
+  padding-bottom: 20px;
+  margin: 0;
+  text-transform: capitalize;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+}
+
+.media__link {
+  display: block;
+  padding-bottom: 20px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.media__link:hover {
+  color: #9070ec;
+}
+
+.media__link:focus {
+  color: #9070ec;
+}
+
+.media__link:active {
+  color: #593cac;
+}
+
+
+@media (min-width: @desktop-width) {
+  .media {
+    border: none;
+  }
+}

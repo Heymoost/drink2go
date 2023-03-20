@@ -1,0 +1,183 @@
+.control {
+  position: relative;
+  display: block;
+  padding-left: 35px;
+}
+
+.control-circle {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #bdbdbd;
+  outline: none;
+}
+
+.control-circle:hover {
+  border: 2px solid #9070ec;
+}
+
+.control-circle:focus {
+  border: 2px solid #9070ec;
+}
+
+.control-circle:active {
+  border: 2px solid #7859cf;
+}
+
+.control-input[type="radio"]:disabled + .control-circle {
+  border: 2px solid #e2e2e2;
+}
+
+.control-input[type="radio"]:disabled + .control-circle:hover::before {
+  background: transparent;
+}
+
+.control-circle:hover::before {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: rgba(120, 89, 207, 0.25);
+  content: "";
+}
+
+.control-circle:focus::before {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: rgba(120, 89, 207, 0.25);
+  content: "";
+}
+
+.control-circle:active::before {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #7859cf;
+  content: "";
+}
+
+.control-input[type="radio"]:checked + .control-circle {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #7859cf;
+  outline: none;
+}
+
+.control-input[type="radio"]:checked + .control-circle::before {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: #7859cf;
+  border-radius: 50%;
+  content: "";
+}
+
+.control-label {
+  display: block;
+  padding-top: 2px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.control-input[type="radio"]:disabled + .control-circle + .control-label {
+  color: #bdbdbd;
+}
+
+.control-country {
+  position: relative;
+  display: block;
+  padding-left: 50px;
+}
+
+.control-checkbox {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 42px;
+  height: 24px;
+  background-color: #bdbdbd;
+  border-radius: 12px;
+  cursor: pointer;
+  outline: none;
+}
+
+.control-checkbox:hover {
+  background: rgba(120, 89, 207, 0.25);
+  border: 2px solid #9070ec;
+  box-sizing: border-box;
+}
+
+.control-checkbox:hover::before {
+  top: 0;
+  left: 0;
+}
+
+.control-checkbox::before {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  content: "";
+}
+
+.control-input[type="checkbox"]:checked + .control-checkbox {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 38px;
+  height: 20px;
+  background-color: #7859cf;
+  border-radius: 12px;
+  border: 2px solid #7859cf;
+  cursor: pointer;
+  outline: none;
+}
+
+.control-input[type="checkbox"]:disabled + .control-checkbox {
+  background: #e2e2e2;
+}
+
+.control-input[type="checkbox"]:checked + .control-checkbox:hover {
+  box-sizing: content-box;
+}
+
+.control-input[type="checkbox"]:checked + .control-checkbox::before {
+  top: 0;
+  left: 18px;
+  content: "";
+}
+
+.control-input[type="checkbox"]:disabled + .control-checkbox:hover {
+  background: #e2e2e2;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+}
+
+.control-input[type="checkbox"]:disabled + .control-checkbox + .control-label {
+  color: #bdbdbd;
+}

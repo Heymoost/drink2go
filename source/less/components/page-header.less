@@ -1,0 +1,41 @@
+.page-header {
+  margin: 0;
+  padding: 0;
+}
+
+.page-header__mobile {
+  display: none;
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--opened + .page-header__mobile {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .page-header__mobile-item {
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    border-top: 1px solid #f0ebff;
+  }
+
+  .page-header__mobile-link {
+    display: block;
+    padding: 20px 0 21px 0;
+    color: #000000;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .page-header__mobile-link:active {
+    background: #f0ebff;
+  }
+}

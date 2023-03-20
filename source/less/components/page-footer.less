@@ -1,0 +1,143 @@
+.page-footer__social {
+  padding: 15px 0 13px 0;
+}
+
+.page-footer__shop {
+  padding: 20px 0 8px 19px;
+}
+
+.page-footer__media {
+  padding: 20px 0 8px 19px;
+}
+
+.page-footer__contacts {
+  padding: 20px 0 20px 19px;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: center;
+  padding: 20px 8px 27px 0;
+}
+
+.page-footer__copyright-text {
+  position: relative;
+  text-align: center;
+  padding-right: 4px;
+  color: #bdbdbd;
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+.page-footer__copyright-text:hover {
+  color: #7859cf;
+}
+
+.page-footer__copyright-text:focus {
+  color: #7859cf;
+}
+
+.page-footer__copyright-text:active {
+  color: #593cac;
+}
+
+.page-footer__copyright-text:hover path {
+  fill: rgb(120, 87, 207);
+}
+
+.page-footer__copyright-text:focus path {
+  fill: rgb(120, 87, 207);
+}
+
+.page-footer__copyright-text:active path {
+  fill: rgba(89, 60, 170);
+}
+
+.page-footer__copyright-logo {
+  position: absolute;
+  right: -10px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+  }
+
+  .page-footer__social {
+    grid-column: 1 / -1;
+    grid-row: 1 / 1;
+    padding-top: 35px;
+  }
+
+  .page-footer__info {
+    display: flex;
+    width: 100%;
+  }
+
+  .page-footer__shop {
+    width: 150px;
+    padding: 10px 102px 0 20px;
+  }
+
+  .page-footer__media {
+    padding: 9px 0 0 17px;
+  }
+
+  .page-footer__contacts {
+    width: 223px;
+    padding: 9px 0 0 17px;
+  }
+
+  .page-footer__copyright {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    padding: 17px 10px 40px 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+
+  .page-footer__social {
+    display: block;
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
+    justify-content: flex-start;
+    padding: 35px 30px 0 40px;
+  }
+
+  .page-footer__info {
+    display: block;
+  }
+
+  .page-footer__shop {
+    grid-column: 2 / 3;
+    grid-row: 1 / 1;
+    padding: 44px 0 0 28px;
+  }
+
+  .page-footer__media {
+    grid-column: 3 / 4;
+    grid-row: 1 / 1;
+    padding: 44px 0 0 15px;
+  }
+
+  .page-footer__contacts {
+    grid-column: 4 / -1;
+    grid-row: 1 / 1;
+    width: 100%;
+    padding: 45px 0 0 4px;
+  }
+
+  .page-footer__copyright {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    padding-top: 8px;
+  }
+}
